@@ -1,0 +1,151 @@
+        body {
+            background-color: #222831;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 0;
+            color: #eeeeee;
+            justify-content: center;
+        }
+        
+        .bigbox {
+            border-radius: 49px 49px 49px 49px;
+            width: 1330px;
+            height: 100px;
+            position: absolute;
+            top: 18px;
+            right: 15px;
+            border: 2.5px solid #32e0c4;
+            font-size: 60pt;
+            text-align: center;
+            color: #eeeeee;
+        }
+        /*         
+        .mboxtxt {
+            padding: 20px;
+        }
+        
+        .mboxtxt:hover {
+            padding-right: 50px;
+            padding-left: 50px;
+        } */
+        
+        .mbox {
+            text-align: center;
+            line-height: 100px;
+            font-size: 36pt;
+            position: absolute;
+            top: 200px;
+            left: 120px;
+            width: 475px;
+            height: 100px;
+            border: 2px solid #32e0c4;
+        }
+        
+        .mbox::after {
+            /* content: '\xea72'; */
+            content: '\00bb';
+            color: #32e0c4;
+            font-size: 36pt;
+            float: right;
+            display: none;
+            opacity: 0;
+            overflow: hidden;
+            width: 0;
+        }
+        
+        .mbox:hover {
+            margin-bottom: 10px;
+            transition-duration: 0.5s;
+            cursor: pointer;
+            box-shadow: 20px 15px 5px #393e46;
+            /* padding-right: 20px; */
+            /* padding-left: 20px; */
+            /* padding-bottom: 5px; */
+            padding: 5px;
+        }
+        
+        .mbox:hover::after {
+            display: contents;
+            opacity: 1;
+            width: 20px;
+        }
+        
+        .stepbox {
+            width: 425px;
+            height: 215px;
+            position: absolute;
+            top: 335px;
+            left: 145px;
+            border: 4px dotted #32e0c4;
+        }
+        
+        .line {
+            height: 490px;
+            border-left: 3px solid #32e0c4;
+            position: absolute;
+            top: 150px;
+            margin-bottom: 20px;
+            left: 50%;
+        }
+        
+        .mtbox {
+            text-align: center;
+            line-height: 100px;
+            font-size: 36pt;
+            position: absolute;
+            top: 200px;
+            right: 120px;
+            width: 475px;
+            height: 100px;
+            border: 2px solid #32e0c4;
+        }
+        
+        .mtbox::after {
+            /* content: '\xea72'; */
+            content: '\00bb';
+            color: #32e0c4;
+            font-size: 36pt;
+            float: right;
+            display: none;
+            opacity: 0;
+            overflow: hidden;
+            width: 0;
+        }
+        
+        .mtbox:hover {
+            margin-bottom: 10px;
+            transition-duration: 0.5s;
+            cursor: pointer;
+            box-shadow: 20px 15px 5px #393e46;
+            /* padding-right: 20px; */
+            /* padding-left: 20px; */
+            /* padding-bottom: 5px; */
+            padding: 5px;
+        }
+        
+        .mtbox:hover::after {
+            display: contents;
+            opacity: 1;
+            width: 20px;
+        }
+        
+        .stepboxmirror {
+            width: 425px;
+            height: 215px;
+            position: absolute;
+            top: 335px;
+            right: 145px;
+            border: 4px dotted #32e0c4;
+        }
+        
+        @media screen and (max-width: 1000px) {
+            .bigbox,
+            .mbox,
+            .mtbox,
+            .stepbox,
+            .line,
+            .stepboxmirror {
+                width: 100%;
+                height: auto;
+                position: static;
+            }
+        }
