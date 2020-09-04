@@ -85,3 +85,30 @@ function por() {
         sec0.style.display = "none";
     }
 }
+
+var r = document.getElementById("row");
+
+
+var pr = document.getElementById("profile");
+var re = document.getElementById("resume");
+var ed = document.getElementById("education");
+var wo = document.getElementById("workexperience");
+var po = document.getElementById("portfolio");
+
+if (screen.width < 999) {
+    pr.style.display = "none";
+    re.style.display = "none";
+    ed.style.display = "none";
+    wo.style.display = "none";
+    po.style.display = "none";
+} else {
+    r.style.display = "none";
+}
+// function topnav() {
+//     var x = document.getElementById("myTopnav");
+//     if (x.className === "topnav") {
+//         x.className += " responsive";
+//     } else {
+//         x.className = "topnav";
+//     }
+// }

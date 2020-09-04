@@ -186,7 +186,7 @@ a {
     margin: 10px;
 }
 
-.row {
+.rowc {
     display: flex;
     flex-wrap: wrap;
     padding-left: 100px;
@@ -278,4 +278,64 @@ iframe {
     left: 2.5vw;
     padding: 10px;
     margin-bottom: 20px;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.m {
+    margin: 30px !important;
+}
+
+h2 {
+    border-top: 4px double #000000;
+    border-left: 6px outset #000000;
+    margin: 20px !important;
+    padding: 15px !important;
+}
+
+h4 {
+    border-right: 5px ridge #000000;
+    border-bottom: 4px groove #000000;
+    margin: 25px !important;
+    padding: 20px !important;
+}
+
+@media screen and (max-width:999px) {
+    * {
+        padding: 2px !important;
+        margin: 0 !important;
+        /* left: 0 !important; */
+    }
+    /* .selection,
+    .profile,
+    .resume,
+    .education,
+    .workexperience,
+    .portfolio {
+        display: none;
+    } */
+    .row {
+        position: relative;
+        width: 100%;
+        background-color: #f6f6f6 !important;
+        top: 5vh;
+    }
+    .profileborder {
+        width: 50%;
+        /* height: 50%; */
+        /* left: 20vw; */
+        align-items: center;
+        top: 2vh;
+    }
+    .txtfield,
+    #name {
+        width: 45%;
+        left: 5vw;
+        font-size: 9pt !important;
+        top: 3vh;
+        line-height: 2.5vh !important;
+        display: none;
+    }
 }
