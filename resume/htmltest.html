@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #myDIV {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            background-color: lightblue;
+            margin-top: 20px;
+            display: none;
+        }
+        
+        #myDIV1 {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            background-color: #e900f1;
+            margin-top: 20px;
+            display: none;
+        }
+        
+        #myDIV2 {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            background-color: rgb(22, 240, 76);
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Click the "Try it" button to toggle between hiding and showing the DIV element:</p>
+
+    <!-- <button type="button" id="1" onclick="btnfunc(this,1)">DIV</button>
+    <button type="button" id="2" onclick="btnfunc(this,2)">DIV1</button>
+    <button type="button" id="3" onclick="btnfunc(this,3)">DIV2</button> -->
+
+    <!-- <button type="button" id="1" onclick="btnfunc">DIV</button>
+    <button type="button" id="2" onclick="btnfunc">DIV1</button>
+    <button type="button" id="3" onclick="btnfunc">DIV2</button> -->
+
+    <button type="button" id="btn1">DIV</button>
+    <button type="button" id="btn2">DIV1</button>
+    <button type="button" id="btn3">DIV2</button>
+
+    <div id="myDIV">
+        This is my DIV element.
+    </div>
+
+    <div id="myDIV1">
+        This is my DIV element 1.
+    </div>
+
+    <div id="myDIV2">
+        This is my DIV element 2.
+    </div>
+
+
+    <script>
+        var a = document.getElementById("myDIV");
+        var b = document.getElementById("myDIV1");
+        var c = document.getElementById("myDIV2");
+
+        // if ((a.style.display === "none") && (b.style.display === "none") && (c.style.display === "none")) {
+        //     a.style.display = "block";
+        // } else if ((a.style.display === "block") && (b.style.display === "none") && (c.style.display === "none")) {
+        //     a.style.display = "none";
+        // } else if ((a.style.display === "none") && (b.style.display === "none") && (c.style.display === "none")) {
+        //     b.style.display = "block";
+        // } else if ((a.style.display === "none") && (b.style.display === "block") && (c.style.display === "none")) {
+        //     b.style.display = "none";
+        // } else if ((a.style.display === "none") && (b.style.display === "none") && (c.style.display === "none")) {
+        //     c.style.display = "block";
+        // } else if ((a.style.display === "none") && (b.style.display === "none") && (c.style.display === "block")) {
+        //     c.style.display = "none"
+        // } else {
+        //     a.style.display = "none";
+        //     b.style.display = "none";
+        //     c.style.display = "none";
+        // }
+
+        document.getElementById("btn1").onclick = function() {
+            btna()
+        };
+        document.getElementById("btn2").onclick = function() {
+            btnb()
+        };
+        document.getElementById("btn3").onclick = function() {
+            btnc()
+        };
+
+        // function btna() {
+        //     if ((a.style.display === "block") && (b.style.display === "none") && (c.style.display === "none")) {
+        //         a.style.display = "none";
+        //     } else if ((a.style.display === "none") && (b.style.display === "none") && (c.style.display === "none")) {
+        //         a.style.display = "block";
+        //     } else {
+        //         a.style.display = "none";
+        //         b.style.display = "none";
+        //         c.style.display = "none";
+        //     }
+        // }
+
+        function btna() {
+            if (a.style.display === "block") {
+                a.style.display = "none";
+            }
+            // } else if (a.style.display === "none") {
+            //     a.style.display = "block";
+            // }
+            else {
+                c.style.display = "none";
+                b.style.display = "none";
+                a.style.display = "block";
+            }
+        }
+
+        function btnb() {
+            if (b.style.display === "block") {
+                b.style.display = "none";
+            }
+            // } else if (a.style.display === "none") {
+            //     a.style.display = "block";
+            // }
+            else {
+                a.style.display = "none";
+                c.style.display = "none";
+                b.style.display = "block";
+            }
+        }
+
+        function btnc() {
+            if (c.style.display === "block") {
+                c.style.display = "none";
+            }
+            // } else if (a.style.display === "none") {
+            //     a.style.display = "block";
+            // }
+            else {
+                a.style.display = "none";
+                b.style.display = "none";
+                c.style.display = "block";
+            }
+        }
+
+        // function btnb() {
+        //     if ((a.style.display === "none") && (b.style.display === "none") && (c.style.display === "none")) {
+        //         b.style.display = "block";
+        //     } else if ((a.style.display === "none") && (b.style.display === "block") && (c.style.display === "none")) {
+        //         b.style.display = "none";
+        //     } else {
+        //         a.style.display = "none";
+        //         b.style.display = "none";
+        //         c.style.display = "none";
+        //     }
+        // }
+
+        // function btnc() {
+        //     if ((a.style.display === "none") && (b.style.display === "none") && (c.style.display === "none")) {
+        //         c.style.display = "block";
+        //     } else if ((a.style.display === "none") && (b.style.display === "none") && (c.style.display === "block")) {
+        //         c.style.display = "none"
+        //     } else {
+        //         a.style.display = "none";
+        //         b.style.display = "none";
+        //         c.style.display = "none";
+        //     }
+        // }
+
+
+        // function myFunction(elmnt) {
+        //     var x = elmnt.id;
+        //     switch (x) {
+        //         case '1':
+        //             btnfunc();
+        //             break;
+        //         case '2':
+        //             btn1func();
+        //             break;
+        //         case '3':
+        //             btn2func();
+        //             break;
+        //     }
+    </script>
+
+</body>
+
+</html>
